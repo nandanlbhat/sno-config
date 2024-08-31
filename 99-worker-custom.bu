@@ -14,7 +14,10 @@ storage:
       overwrite: true
       contents:
         inline: |
-          pool asia.pool.ntp.org iburst
+          server wyman.couch.ca iburst
+          server ntp.i2t.ehu.eus iburst
+          server ntp.mazzanet.net.au iburst
+          server sou-toolsa.f5.si iburst
           driftfile /var/lib/chrony/drift
           makestep 1.0 3
           rtcsync
